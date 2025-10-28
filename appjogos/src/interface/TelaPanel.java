@@ -14,6 +14,6 @@ public class TelaPanel extends JPanel implements ActionListener {
         this.controleTela = (CardLayout) telas.getLayout();
         this.janelas = janelas;
         this.setBackground(Color.decode("#202028"));
-        Imagem botaoFechar = new Imagem("");
+        Imagem botaoFechar = new Imagem("prova");
     }
 }
