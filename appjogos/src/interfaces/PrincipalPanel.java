@@ -1,4 +1,4 @@
-package inteface;
+package interfaces;
 
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;

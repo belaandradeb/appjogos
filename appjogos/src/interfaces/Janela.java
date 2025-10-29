@@ -1,4 +1,4 @@
-package inteface;
+package interfaces;
 
 import java.awt.CardLayout;
 import javax.swing.JFrame;
