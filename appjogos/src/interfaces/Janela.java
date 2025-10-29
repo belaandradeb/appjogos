@@ -5,8 +5,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
-public class Janela extends JFrame {// vai herdar a classe usada em java teste
-    public Janela() {//método contrutor
+public class janela extends JFrame {// vai herdar a classe usada em java teste
+    public janela() {//método contrutor
         this.setBounds(0,0,1920,1080);//método importado de jframe
 
         CardLayout controleTela = new CardLayout();//PAINEL DE telas, permitindo a troca de telas, mostra por padrão a primeira tela
