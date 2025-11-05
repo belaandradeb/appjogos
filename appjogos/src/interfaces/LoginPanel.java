@@ -23,4 +23,5 @@ public class LoginPanel extends TelaPanel{// extende a TelaPanel
     public void executarBotao(ActionEvent e){
         trocarTela("Tela Principal");
     }
+
 }

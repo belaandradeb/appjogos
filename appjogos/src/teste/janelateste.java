@@ -2,10 +2,8 @@ package teste;
 
 import interfaces.Janela;
 
-public class janela {
+public class janelateste {
     public static void main(String[] args) {
-        janela janela = new janela();
+        new Janela();
     }
 }
-
-
