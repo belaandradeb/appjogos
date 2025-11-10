@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class TelaPanel extends JPanel implements ActionListener {
+
     private JPanel telas;
     private CardLayout controleTela;
     private JFrame janela;
@@ -19,8 +20,10 @@ public class TelaPanel extends JPanel implements ActionListener {
         this.telas = telas;
         this.controleTela = (CardLayout) telas.getLayout();
         this.janela = janela;
+
         setBackground(Color.decode("#202028"));
 
+        // Botão de imagem (fechar)
         Imagem botaoFechar = new Imagem("close2.png");
         botaoFechar.addMouseListener(new MouseAdapter() {
             @Override
@@ -29,6 +32,7 @@ public class TelaPanel extends JPanel implements ActionListener {
                 janela.dispose(); // Fecha a janela
             }
         });
+
         add(botaoFechar);
     }
 
@@ -37,9 +41,12 @@ public class TelaPanel extends JPanel implements ActionListener {
         executarBotao(e);
     }
 
-    protected void executarBotao(ActionEvent e) {}
+    protected void executarBotao(ActionEvent e) {
+        // Implementado nas subclasses (LoginPanel, PrincipalPanel)
+    }
 
     protected void trocarTela(String identificador) {
         controleTela.show(telas, identificador);
     }
 }
+

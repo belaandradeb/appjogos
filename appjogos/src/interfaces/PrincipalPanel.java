@@ -6,19 +6,22 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class PrincipalPanel extends TelaPanel{
+public class PrincipalPanel extends TelaPanel {
 
-    public PrincipalPanel(JPanel telas, JFrame janela){//jpanel telas para ser exibido na trca de telas
+    public PrincipalPanel(JPanel telas, JFrame janela) {
         super(telas, janela);
-        JLabel mensagem = new JLabel(" Conteúdo do principal Panel");//CRIA A MENSAGEM
-        JButton botao = new JButton("voltar"); //CRIA UM BOTÃO
-        botao.addActionListener(this);//chama o método override
 
-        this.add(botao);
-        this.add(mensagem);//ADICIONA A MENSAGEM NA TELA
+        JLabel mensagem = new JLabel("Conteúdo do Principal Panel");
+        JButton botaoVoltar = new JButton("Voltar");
+
+        botaoVoltar.addActionListener(this);
+
+        add(botaoVoltar);
+        add(mensagem);
     }
 
-    public void executarBotao(ActionEvent e){
+    @Override
+    public void executarBotao(ActionEvent e) {
         trocarTela("Tela Login");
     }
 }
